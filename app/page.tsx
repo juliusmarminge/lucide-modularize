@@ -1,5 +1,6 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Image from "next/image";
+import styles from "./page.module.css";
+import { Check } from "lucide-react";
 
 export default function Home() {
   return (
@@ -9,13 +10,14 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>app/page.tsx</code>
         </p>
+        <Check />
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -91,5 +93,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
